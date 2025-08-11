@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Lasanha - Minhas Receitas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff7043;
+            color: white;
+            padding: 24px 0 16px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px #ff704344;
+        }
+        main {
+            max-width: 700px;
+            margin: 32px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px #0001;
+            padding: 32px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .nav-buttons a {
+            background: #ff7043;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-buttons a:hover {
+            background: #ff5722;
+        }
+        ul {
+            list-style: disc inside;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .lasanha-section {
+            margin-top: 32px;
+            background: #fff3e0;
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 1px 8px #ff704322;
+        }
+        .lasanha-section img {
+            display: block;
+            margin: 0 auto 18px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .lasanha-section h2 {
+            text-align: center;
+            color: #ff7043;
+            margin-bottom: 12px;
+        }
+        ol {
+            margin-left: 0;
+            padding-left: 18px;
+        }
+        ol li {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 12px;
+            }
+            .lasanha-section {
+                padding: 10px;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minhas Receitas Favoritas</h1>
+        <p>Bem-vindo ao meu site de receitas! Aqui estão algumas das minhas receitas favoritas:</p>
+    </header>
+    <main>
+        <div class="nav-buttons">
+            <a href="bolo_de_cenoura.html">Bolo de Cenoura</a>
+            <a href="lasanha.html">Lasanha</a>
+            <a href="pizza.html">Pizza</a>
+            <a href="../index.html">
+                <img src="home.png" alt="Home" style="width:20px; vertical-align:middle; margin-right:8px;">
+                Home
+            </a>
+        </div>
+        <section class="lasanha-section">
+            <h2>Lasanha</h2>
+            <img src="https://bing.com/th?id=OSK.3cd647744e112153a08f42511290eb49" alt="Imagem de uma lasanha deliciosa" width="300">
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>500g de massa para lasanha</li>
+                <li>500g de carne moída</li>
+                <li>1 cebola picada</li>
+                <li>2 dentes de alho picados</li>
+                <li>2 colheres de sopa de óleo</li>
+                <li>2 latas de molho de tomate</li>
+                <li>Sal e pimenta a gosto</li>
+                <li>300g de presunto fatiado</li>
+                <li>300g de queijo mussarela fatiado</li>
+                <li>Queijo parmesão ralado a gosto</li>
+                <li>Orégano a gosto</li>
+            </ul>
+            <h4>Modo de preparo:</h4>
+            <ol>
+                <li>Em uma panela, aqueça o óleo e refogue a cebola e o alho até dourar.</li>
+                <li>Adicione a carne moída e refogue até perder a cor avermelhada.</li>
+                <li>Acrescente o molho de tomate, tempere com sal, pimenta e orégano. Cozinhe por 10 minutos.</li>
+                <li>Cozinhe a massa da lasanha conforme as instruções da embalagem.</li>
+                <li>Em um refratário, monte camadas de molho, massa, presunto e queijo, repetindo até acabar os ingredientes. Finalize com molho e queijo parmesão por cima.</li>
+                <li>Leve ao forno preaquecido a 180°C por cerca de 30 minutos ou até gratinar.</li>
+                <li>Sirva quente.</li>
+            </ol>
+        </section>
+    </main>

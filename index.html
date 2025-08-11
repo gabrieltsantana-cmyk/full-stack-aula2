@@ -27,46 +27,98 @@
             box-shadow: 0 2px 16px #0001;
             padding: 32px;
         }
-        ul {
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .nav-buttons a {
+            background: #ff7043;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-buttons a:hover {
+            background: #ff5722;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .receitas-lista {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .receitas-lista ul {
             list-style: disc inside;
             padding-left: 0;
         }
-        ul li {
+        .receitas-lista ul li {
             margin-bottom: 10px;
             font-size: 1.1em;
         }
-        .pizza-section {
-            margin-top: 32px;
+        .form-section {
+            margin-top: 40px;
             background: #fff3e0;
             border-radius: 10px;
             padding: 24px;
             box-shadow: 0 1px 8px #ff704322;
         }
-        .pizza-section img {
-            display: block;
-            margin: 0 auto 18px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px #0002;
-        }
-        .pizza-section h2 {
+        .form-section h2 {
             text-align: center;
             color: #ff7043;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
         }
-        ol {
-            margin-left: 0;
-            padding-left: 18px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            max-width: 400px;
+            margin: 0 auto;
         }
-        ol li {
-            margin-bottom: 10px;
+        label {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        input, textarea {
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
             font-size: 1em;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        button[type="submit"] {
+            background: #ff7043;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: #ff5722;
         }
         @media (max-width: 600px) {
             main {
                 padding: 12px;
             }
-            .pizza-section {
+            .form-section {
                 padding: 10px;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -74,70 +126,42 @@
 <body>
     <header>
         <h1>Minhas Receitas Favoritas</h1>
-        <p>Bem-vindo ao meu site de receitas! Aqui estão algumas das minhas receitas favoritas:</p>
+        <p>Bem-vindo ao meu site de receitas! Descubra e compartilhe delícias.</p>
     </header>
     <main>
-        <ul>
-            <li><a href="receitas/bolo_de_cenoura.html">Bolo de Cenoura</a></li>
-            <li><a href="receitas/lasanha.html">Lasanha</a></li>
-            <li><a href="receitas/pizza.html">Pizza</a></li>
-        </ul>
-        <section class="pizza-section">
-            <h2>Pizza</h2>
-            <img src="https://usagif.com/wp-content/uploads/gifs/pizza-52.gif" alt="Imagem de uma pizza deliciosa" width="300">
-            <h3>Ingredientes da massa:</h3>
-                <li>
-                    6 xícaras de chá, ou 740 gramas de farinha de trigo
-                </li>
-                <li>
-                    2 colheres de sopa, ou 20 gramas de fermento biológico seco
-                </li>
-                <li>
-                    2 colheres de chá de açúcar
-                </li>
-                <li>
-                    2 colheres de chá de sal
-                </li>
-                <li>
-                    2 xícaras e meia de chá de água morna
-                </li>
-                <li>
-                    Um quarto de xícara de chá de azeite
-                </li>
-                <li>
-                    Farinha de trigo para polvilhar a bancada
-                </li>
-                <li>
-                    Azeite para untar a tigela
-                </li>
-            <h4>Modo de preparo da massa:</h4>
-            <ol>
-                <li>
-                    Numa tigela, misture o fermento e o açúcar. Regue com a água morna e, com uma colher, misture bem para dissolver. Deixe em temperatura ambiente até espumar cerca de 5 minutos.
-                </li>
-                <li>
-                    Enquanto isso, na tigela da batedeira, misture a farinha com o sal e abra um buraco no centro. Separe uma tigela ou outro recipiente grande e unte com 2 colheres de sopa de azeite ela tem que ter espaço suficiente para a massa crescer bastante.
-                </li>
-                <li>
-                    Assim que espumar, despeje a mistura de fermento no centro da tigela com farinha. Adicione um quarto de xícara de chá de azeite e misture, com uma espátula, apenas para incorporar.
-                </li>
-                <li>
-                    Para sovar a massa, encaixe a tigela na batedeira com o gancho. Comece a bater em velocidade baixa por 5 minutos, aumente a velocidade aos poucos para alta e deixe bater por mais 15 minutos até formar uma massa lisa. Ela vai descolar da lateral da tigela e formar uma bola no gancho da batedeira.
-                </li>
-                <li>
-                    Com as pontas dos dedos ou uma espátula, desgrude a massa da tigela da batedeira e transfira para o recipiente untado com azeite. Cubra com filme e deixe descansar por 1 hora, até crescer e dobrar de volume.
-                </li>
-                <li>
-                    Quando faltarem 30 minutos para completar o tempo de crescimento da massa, preaqueça o forno a 250 graus. Se for utilizar uma assadeira de pedra sabão, coloque-a dentro do forno ainda frio para aquecer desde o início. Caso contrário, ela pode rachar com o choque térmico.
-                </li>
-                <li>
-                    Polvilhe uma bancada lisa com farinha de trigo, transfira a massa de pizza para a bancada e, com uma espátula ou faca, divida em 4 porções.
-                </li>
-                <li>
-                    Utilize a seguir ou, se preferir, embale individualmente com filme e armazene na geladeira por 3 dias ou no congelador por até 1 mês.
-                </li>
-            </ol>
+        <section class="intro">
+            <h2>Sobre o site</h2>
+            <p>
+                Aqui você encontra receitas deliciosas e práticas para o seu dia a dia. Clique nos botões acima para navegar entre as receitas!
+            </p>
+        </section>
+        <section class="receitas-lista">
+            <h2>Receitas em destaque</h2>
+            <ul>
+                <div class="nav-buttons">
+                <a href="receitas/bolo_de_cenoura.html">Bolo de Cenoura</a>
+                <a href="receitas/lasanha.html">Lasanha</a>
+                <a href="receitas/pizza.html">Pizza</a>
+        </div>
+            </ul>
+        </section>
+        <section class="form-section">
+            <h2>Mande sua receita</h2>
+            <form>
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nome-receita">Nome da receita:</label>
+                <input type="text" id="nome-receita" name="nome-receita" required>
+
+                <label for="descricao">Descrição da receita:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <button type="submit">Enviar receita</button>
+            </form>
         </section>
     </main>
 </body>
-</html>
