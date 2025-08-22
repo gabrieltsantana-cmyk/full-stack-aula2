@@ -5,93 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <title>Pizza - Minhas Receitas</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fff8f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #ff7043;
-            color: white;
-            padding: 24px 0 16px 0;
-            text-align: center;
-            box-shadow: 0 2px 8px #ff704344;
-        }
-        main {
-            max-width: 700px;
-            margin: 32px auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 16px #0001;
-            padding: 32px;
-        }
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-        .nav-buttons a {
-            background: #ff7043;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-        .nav-buttons a:hover {
-            background: #ff5722;
-        }
-        ul {
-            list-style: disc inside;
-            padding-left: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        .pizza-section {
-            margin-top: 32px;
-            background: #fff3e0;
-            border-radius: 10px;
-            padding: 24px;
-            box-shadow: 0 1px 8px #ff704322;
-        }
-        .pizza-section img {
-            display: block;
-            margin: 0 auto 18px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px #0002;
-        }
-        .pizza-section h2 {
-            text-align: center;
-            color: #ff7043;
-            margin-bottom: 12px;
-        }
-        ol {
-            margin-left: 0;
-            padding-left: 18px;
-        }
-        ol li {
-            margin-bottom: 10px;
-            font-size: 1em;
-        }
-        @media (max-width: 600px) {
-            main {
-                padding: 12px;
-            }
-            .pizza-section {
-                padding: 10px;
-            }
-            .nav-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <header>
@@ -108,31 +22,38 @@
                 Home
             </a>
         </div>
-        <section class="pizza-section">
-            <h2>Pizza</h2>
-            <img src="https://tse1.mm.bing.net/th/id/OIP.53w8LRLNRm5V_02ixHFP9AHaEG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem de uma pizza deliciosa" width="300">
-            <h3>Ingredientes da massa:</h3>
-            <ul>
-                <li>2 xícaras de farinha de trigo</li>
-                <li>1 colher de sopa de fermento biológico seco</li>
-                <li>1 colher de chá de sal</li>
-                <li>1 colher de sopa de açúcar</li>
-                <li>3/4 de xícara de água morna</li>
-                <li>2 colheres de sopa de azeite</li>
-            </ul>
-            <h3>Ingredientes da cobertura:</h3>
-            <ul>
-                <li>1/2 xícara de molho de tomate</li>
-                <li>200g de queijo mussarela ralado</li>
-                <li>Tomate em rodelas</li>
-                <li>Orégano a gosto</li>
-                <li>Azeitonas a gosto</li>
-            </ul>
-            <h4>Modo de preparo:</h4>
-            <ol>
-                <li>Em uma tigela, misture o fermento, o açúcar e a água morna. Deixe descansar por 5 minutos.</li>
-                <li>Adicione o sal, o azeite e a farinha aos poucos, misturando até formar uma massa homogênea.</li>
-                <li>Sove a massa por cerca de 10 minutos, cubra e deixe descansar até dobrar de volume (cerca de 1 hora).</li>
-                <li>Abra a massa em uma superfície enfarinhada e coloque em uma forma de pizza untada.</li>
-                <li>Espalhe o molho de tomate, cubra com queijo, tomate, orégano e azeitonas.</li>
-                <li>Leve ao forno preaquecido a 220°C por cerca
+        <section class="receita-section" style="text-align:center;">
+            <h2 class="receita-titulo">Pizza</h2>
+            <img class="receita-img" src="https://tse1.mm.bing.net/th/id/OIP.53w8LRLNRm5V_02ixHFP9AHaEG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Imagem de uma pizza deliciosa" style="display:block; margin:0 auto 18px auto;">
+            <div class="receita-info" style="text-align:left;">
+                <h3>Ingredientes da massa:</h3>
+                <ul>
+                    <li>2 xícaras de farinha de trigo</li>
+                    <li>1 colher de sopa de fermento biológico seco</li>
+                    <li>1 colher de chá de sal</li>
+                    <li>1 colher de sopa de açúcar</li>
+                    <li>3/4 de xícara de água morna</li>
+                    <li>2 colheres de sopa de azeite</li>
+                </ul>
+                <h3>Ingredientes da cobertura:</h3>
+                <ul>
+                    <li>1/2 xícara de molho de tomate</li>
+                    <li>200g de queijo mussarela ralado</li>
+                    <li>Tomate em rodelas</li>
+                    <li>Orégano a gosto</li>
+                    <li>Azeitonas a gosto</li>
+                </ul>
+                <h4>Modo de preparo:</h4>
+                <ol>
+                    <li>Em uma tigela, misture o fermento, o açúcar e a água morna. Deixe descansar por 5 minutos.</li>
+                    <li>Adicione o sal, o azeite e a farinha aos poucos, misturando até formar uma massa homogênea.</li>
+                    <li>Sove a massa por cerca de 10 minutos, cubra e deixe descansar até dobrar de volume (cerca de 1 hora).</li>
+                    <li>Abra a massa em uma superfície enfarinhada e coloque em uma forma de pizza untada.</li>
+                    <li>Espalhe o molho de tomate, cubra com queijo, tomate, orégano e azeitonas.</li>
+                    <li>Leve ao forno preaquecido a 220°C por cerca de 20 minutos ou até dourar.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff8f0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #ff7043;
+    color: white;
+    padding: 24px 0 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px #ff704344;
+}
+main {
+    max-width: 700px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #0001;
+    padding: 32px;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.nav-buttons a,
+button,
+.btn {
+    background: #ff7043;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.nav-buttons a:hover,
+button:hover,
+.btn:hover {
+    background: #ff5722;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.receitas-lista {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.receitas-lista ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+.receitas-lista ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.form-section {
+    margin-top: 40px;
+    background: #fff3e0;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 8px #ff704322;
+}
+.form-section h2 {
+    text-align: center;
+    color: #ff7043;
+    margin-bottom: 18px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+input, textarea {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+button[type="submit"] {
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+    .form-section {
+        padding: 10px;
+    }
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

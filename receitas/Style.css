@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff3e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ff7043;
+    color: white;
+    padding: 20px 0 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px #ff704344;
+    border-bottom: 4px solid #ffab91;
+}
+
+main {
+    max-width: 600px;
+    margin: 36px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 24px #ff704322;
+    padding: 36px 28px;
+    border: 2px dashed #ff7043;
+}
+
+.receita-titulo {
+    color: #ff7043;
+    text-align: center;
+    font-size: 2.1em;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.receita-info {
+    background: #ffe0b2;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 8px #ff704322;
+}
+
+.receita-ingredientes,
+.receita-preparo {
+    margin-bottom: 24px;
+}
+
+.receita-ingredientes h2,
+.receita-preparo h2 {
+    color: #ff7043;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.receita-ingredientes ul {
+    list-style: circle inside;
+    padding-left: 0;
+}
+
+.receita-preparo ol {
+    padding-left: 18px;
+}
+
+.voltar-btn {
+    display: inline-block;
+    background: #ff7043;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 18px;
+}
+
+.voltar-btn:hover {
+    background: #ff5722;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.nav-buttons a,
+.nav-buttons .btn {
+    background: #ffab91;
+    color: #ff7043;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 1px 6px #ff704322;
+    display: inline-block;
+}
+
+.nav-buttons a:hover,
+.nav-buttons .btn:hover {
+    background: #ff7043;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px 6px;
+    }
+    .receita-info {
+        padding: 12px 8px;
+    }
+    .receita-titulo {
+        font-size: 1.8em;
+    }
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
